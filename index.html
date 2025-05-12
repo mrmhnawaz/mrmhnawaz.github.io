@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mohammed Hussain Nawaz Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Mohammed Hussain Nawaz</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About Me</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Mohammed Hussain Nawaz</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Fresher   ',
+						'Data Analyst',
+						'Data Scientist',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Aspiring Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p> <a href="https://github.com/mrmhnawaz" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.PNG" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Mohammed Hussain Nawaz</span></p>
+										<p><span class="title-s">Current Job Role: </span> <span>Coverage and access specialist</span></p>
+										<p><span class="title-s">Interested in: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>8 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">40%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine learning</span> <span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Power BI</span> <span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+
+									<span>Tabaleu</span> <span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+									<span>C Programming</span> <span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I’m Mohammed Hussain Nawaz, an aspiring Data Analyst with a background in Embedded Systems and a passion for turning data into actionable insights. Skilled in Python, SQL, Power BI, and data visualization.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Kannada</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Excel &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Embedded, IoT, Firmware, Arduino &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Singing</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="500"> </span> <span>+ connections</span>
+									<span>&nbsp; </span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/mohammed-hussain-nawaz-7a972b1b8/" class="btn btn-primary py-3 px-3">My LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>A dedicated Data Analytics fresher eager to leverage analytical skills, a passion for uncovering actionable insights, and a commitment to continuous learning in a dynamic role within a prestigious organization. Currently serving as a Coverage and Access Specialist, gaining valuable experience in healthcare data management and operational processes.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>Coverage and Access Specialist </h2>
+						<span class="position">Omega Healthcare</span>
+						<p class="mt-4">Omega Healthcare Management Pvt Ltd is a leading healthcare outsourcing company specializing in revenue cycle management, medical billing, coding, and healthcare analytics for US-based clients. 
+							<ul>
+								<li>Utilized Salesforce software (Health Cloud/Service Cloud) to manage patient access, verify insurance 
+									benefits, and ensure eligibility for USA based Leading Global Pharmaceutical Company..</li>
+								<li>Analyzed large datasets of patient and insurance information, identifying trends to resolve access and 
+									coverage issues.</li>
+								<li>Effectively communicated with healthcare providers and insurance companies to resolve complex issues 
+									and ensure timely access to healthcare services.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-2024</span>
+						<h2>Embedded Engineer Intern</h2>
+						<span class="position">Resspreneurs Technologies</span>
+						<p class="mt-4">Ressprenuers Technologies Pvt Ltd is an engineering solutions company focused on embedded systems, IoT, and satellite technology, offering innovative solutions in CubeSat development and related fields. 
+							<ul>
+								<li>Assisted in integrating and debugging embedded hardware and firmware to ensure reliable operation 
+									& made Understanding the Electrical Power Systems, including BMS and power distribution.</li>
+								<li>Developed and testing embedded systems team for CubeSat subsystems, focusing on hardware 
+									development and prototyping using NXP iMXRT1062.</li>
+								<li>Collaborated with other engineers and implemented test plans for antenna simulation and other
+									Subsystem validation in RTOS.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2024</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Akshaya Institute of Technology</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2020</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">DRM Science PU college</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+				</div>
+    		</div>
+
+			<div class="row">
+				<h1 class="big-4">Professional Course</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			
+				<div class="row">
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2025-Present</span>
+							<h2>Google Data Analytics Certificate & Training</h2>
+							<span class="position">Google Professional Certifications</span>
+							<p class="mt-4">Grade: First class.</p>
+						</div>
+					</div>
+	
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2024</span>
+							<h2>Data Analytics Essential</h2>
+							<span class="position">Cisco Networking Academy</span>
+							<p class="mt-4">Grade: First class.</p>
+						</div>
+					</div>
+				</div>
+<!-- Certificate Carousel Section -->
+<section id="certificates" class="mt-5">
+    <div class="row">
+        <h1 class="big-4">Certificates</h1>
+        <div class="underline"></div>
+    </div>
+
+    <!-- Added gap after the yellow row line -->
+    <div style="height: 20px;"></div>
+
+    <div class="carousel-container">
+        <button class="nav-button left" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel-track">
+            <div class="certificate" onclick="openPopup('images/cert1.PNG', 'Google Data Foundation')">
+                <img src="images/cert1.PNG">
+                <p class="cert-name">Google Data Foundation</p>
+            </div>
+            <div class="certificate" onclick="openPopup('images/cert2.PNG', 'Cisco Data Analytics Essential')">
+                <img src="images/cert2.PNG">
+                <p class="cert-name">Cisco Data Analytics Essential</p>
+            </div>
+            <div class="certificate" onclick="openPopup('images/cert3.PNG', 'Power BI Crash Course')">
+                <img src="images/cert3.PNG">
+                <p class="cert-name">Power BI Crash Course</p>
+            </div>
+            <div class="certificate" onclick="openPopup('images/cert4.JPG', 'Python for Beginners')">
+                <img src="images/cert4.JPG">
+                <p class="cert-name">Python for Beginners</p>
+            </div>
+            <div class="certificate" onclick="openPopup('images/cert5.PNG', 'Excel using AI')">
+                <img src="images/cert5.PNG">
+                <p class="cert-name">Excel using AI</p>
+            </div>
+        </div>
+        <button class="nav-button right" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
+
+<!-- Popup for enlarged image and name -->
+<div id="popup" class="popup" onclick="closePopup()">
+    <img id="popup-img" src="">
+    <p id="popup-text"></p>
+</div>
+
+<style>
+    .carousel-container {
+        position: relative;
+        width: 85%;
+        max-width: 850px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 15px;
+    }
+
+    .certificate {
+        flex: 0 0 28%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        position: relative;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .certificate img {
+        width: 100%;
+        max-height: 180px;
+        display: block;
+        border-radius: 10px;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .certificate:hover img {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    .cert-name {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .nav-button.left {
+        left: 10px;
+    }
+
+    .nav-button.right {
+        right: 10px;
+    }
+
+    /* Popup styling */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .popup img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .popup p {
+        color: white;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+</style>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+    let index = 0;
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${index * (28 + 1)}%)`;
+    }
+
+    function moveCarousel(direction) {
+        const totalCertificates = document.querySelectorAll('.certificate').length;
+        index = (index + direction + totalCertificates) % totalCertificates;
+        updateCarousel();
+    }
+
+    function openPopup(imageSrc, certName) {
+        document.getElementById("popup-img").src = imageSrc;
+        document.getElementById("popup-text").innerText = certName;
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    updateCarousel();
+</script>
+	
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1wxrW8vO2kl3VKvwmnVTGnsAAwuDVDClV/view?usp=drive_link" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics & Embedded Projects on SQL, Python, C/C++, Power BI & ML .</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/mrmhnawaz/Movies-Data-Analytics-Dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/mrmhnawaz/Movies-Data-Analytics-Dashboard">Movies Data Analytics Dashboard using Power BI	</a></h3>
+                <p>This project showcases a dashboard provides deep insights into the entertainment industry, analyzing a dataset of over 4,500 movies (as of 2017).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/mrmhnawaz/Automotation_Shed_IoT" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/mrmhnawaz/Automotation_Shed_IoT">IoT Based Smart Shed Automation for Crop Protection</a></h3>
+                <p>IoT-based smart shed automation system designed to enhance crop protection and management efficiency.</p>
+              </div>
+            </div>
+          </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="2">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/mrmhnawaz" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bengaluru, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel:+919480549098">+ 91 94805 49098</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:mdhussainnawaz19@gmail.com">mdhussainnawaz19@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1wxrW8vO2kl3VKvwmnVTGnsAAwuDVDClV/view?usp=drive_link"> Resume </a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="#" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/mohammed-hussain-nawaz-7a972b1b8/"><span class="icon-linkedin"></span></a></li>  
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
